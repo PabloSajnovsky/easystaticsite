@@ -56,9 +56,9 @@ EasyStaticSite is a static site generator that is dead-simple to install and use
 
 ##### Which template tags can I use?
 Before checking out this list, please take a look at the template - it is fairly self-explanatory.
-- `{{ title }}` goes between <title> and </title>. Optional.
+- `{{ title }}` goes between `<title>` and `</title>`. Optional.
 - `{{ site_name }}` outputs your site name (configurable on the Settings admin page). Optional.
-- `{{ page_menu }}` outputs the page menu (configurable on the Menu admin page) as <li> elements. Optional.
+- `{{ page_menu }}` outputs the page menu (configurable on the Menu admin page) as `<li>` elements. Optional.
 - `{{ post_loop_start }}` does not output anything, but indicates that this is the start of the post loop, i.e. the part that is repeated for each post on the page. **Mandatory**.
 - `{{ post_loop_end }}` does not output anything, but indicates that this is the end of the post loop. **Mandatory**.
 - `{{ post_id }}` outputs the numerical ID of the post. Must be inside the post loop. **Mandatory**.
@@ -78,4 +78,4 @@ file there, just make sure it doesn't have the same name as one of the post/page
 ##### How do I add images to my posts/pages?
 
 EasyStaticSite has no interface for that, so you will have to manually copy the image(s) to the document root (~/easystaticsite/web) and then,
-when editing a post/page, select the HTML editing tab and insert an <img> tag in the code.
+when editing a post/page, select the HTML editing tab and insert an `<img>` tag in the code.
