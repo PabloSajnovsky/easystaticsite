@@ -48,7 +48,7 @@ EasyStaticSite is a static site generator that is dead-simple to install and use
 ## FAQ
 
 ##### What files/folders does EasyStaticSite store on my system?
-- Config file: ~/.easystaticsite_config.json
+- Config file: ~/.easystaticsite_config.json. You should not need to edit this by hand; instead, go to the Settings admin page.
 - Site folder: ~/easystaticsite. Contains the template, the post/page database and the document root folder (named "web"). You can change the location of the site folder on the Settings admin page.
 
 ##### Where can I find the template file?
@@ -69,3 +69,13 @@ Before checking out this list, please take a look at the template - it is fairly
 - `{{ archive_link }}` outputs the "older entries" link; configurable on the Settings admin page. **Mandatory**.
 - `{{ generator_name }}`outputs the name of the generator; EasyStaticSite. Optional.
 - `{{ generator_url }}` outputs the URL to EasyStaticSite's home page. Optional.
+
+##### Can I put my own static files (e.g. CSS files, images, etc.) or folders inside the document root without EasyStaticSite overwriting/deleting them?
+
+Sure. EasyStaticSite only writes .html files, so files with any other extension are okay. In case you need to manually place a .html
+file there, just make sure it doesn't have the same name as one of the post/page slugs.
+
+##### How do I add images to my posts/pages?
+
+EasyStaticSite has no interface for that, so you will have to manually copy the image(s) to the document root (~/easystaticsite/web) and then,
+when editing a post/page, select the HTML editing tab and insert an <img> tag in the code.
