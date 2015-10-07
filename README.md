@@ -1,6 +1,6 @@
 # EasyStaticSite
 
-EasyStaticSite is a static site generator that is dead-simple to install and use: Just download and run it. Written in Python, it has no dependencies other than the Python interpreter already installed on your system (if you use OS X or Linux), and its web-based admin section has no external JavaScript dependencies, meaning you can use it offline.
+EasyStaticSite is a static site generator that is dead-simple to install and use: Just download and run it, and it will open a browser-based admin section. Written in Python, it has no dependencies other than the Python interpreter already installed on your system (if you use OS X or Linux), and its admin section has no external JavaScript dependencies, meaning you can use it offline.
 
 
 
@@ -47,10 +47,6 @@ EasyStaticSite is a static site generator that is dead-simple to install and use
 
 ## FAQ
 
-##### What files/folders does EasyStaticSite store on my system?
-- Config file: ~/.easystaticsite_config.json. You should not need to edit this by hand; instead, go to the Settings admin page.
-- Site folder: ~/easystaticsite. Contains the template, the post/page database and the document root folder (named "web"). You can change the location of the site folder on the Settings admin page.
-
 ##### Where can I find the template file?
 ~/easystaticsite/template.html
 
@@ -79,3 +75,7 @@ file there, just make sure it doesn't have the same name as one of the post/page
 
 EasyStaticSite has no interface for that, so you will have to manually copy the image(s) to the document root (~/easystaticsite/web) and then,
 when editing a post/page, select the HTML editing tab and insert an `<img>` tag in the code.
+
+##### What files/folders does EasyStaticSite store on my system?
+- Config file: ~/.easystaticsite_config.json. You should not need to edit this by hand; instead, go to the Settings admin page.
+- Site folder: ~/easystaticsite. Contains the template, the post/page database and the document root folder (named "web"). You can change the location of the site folder on the Settings admin page.
