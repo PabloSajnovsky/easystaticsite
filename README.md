@@ -2,6 +2,8 @@
 
 EasyStaticSite is a static site generator that is dead-simple to install and use: Just download and run it, and it will open a browser-based admin section. Written in Python, it has no dependencies other than the Python interpreter already installed on your system (if you use OS X or Linux), and its admin section has no external JavaScript dependencies, meaning you can use it offline.
 
+![Screenshot](https://raw.githubusercontent.com/codenhagen/easystaticsite/master/screenshot.png)
+
 
 
 ## Features
